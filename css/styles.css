@@ -121,12 +121,6 @@ p {
     margin-left: 77px;
 }
 
-
-
-
-
-
-
 .header-item {
     position: relative;
     margin-right: 40px;
@@ -227,10 +221,25 @@ p {
     line-height: 1.1;
     letter-spacing: 0.03em;
     margin-bottom: 48px;
-
-
-
 }
+.hero-title {
+    animation: top-to-bottom 1000ms 500ms both;
+}
+
+@keyframes top-to-bottom {
+    0%{
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    50%{
+        opacity: 0.6;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 .button-hero {
     background-color: var(--buton-color);
@@ -250,7 +259,26 @@ p {
     border-radius: 4px;
 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-hero {
+    animation: bottom-to-top 1000ms 500ms both;
+}
+
+@keyframes bottom-to-top {
+0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
@@ -412,7 +440,6 @@ p {
 
 .team-list {
     display: flex;
-
 }
 
 .team-item {
@@ -426,6 +453,7 @@ p {
 .team-item:last-child {
     margin-right: 0;
 }
+.efects-team-item 
 
 
 .icon-team {
