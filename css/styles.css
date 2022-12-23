@@ -453,8 +453,17 @@ p {
 .team-item:last-child {
     margin-right: 0;
 }
-.efects-team-item 
-
+.icon-team:hover {
+    animation: rotate 500ms linear;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 .icon-team {
     width: 40px;
@@ -908,6 +917,7 @@ p {
     left: 0;
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(3px);
 }
 
 .backdrop.is-hidden {
