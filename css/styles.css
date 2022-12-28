@@ -1020,6 +1020,8 @@ p {
 .modal-form {
     margin-left: 24px;
     margin-right: 24px;
+    margin-top: 72px;
+    margin-bottom: 40px;
 }
 .uni-form input:focus {
     border: 1px solid var(--buton-color);
@@ -1135,8 +1137,7 @@ p {
     color: var(--primary-text-color);
     margin-right: auto;
     margin-left: auto;
-    margin-top: 72px;
-    margin-bottom: 14px;
+    padding-bottom: 14px;
 }
 .checkbox {
     -webkit-appearance: none;
@@ -1194,6 +1195,8 @@ p {
     border: none;
     margin-left: 120px;
     margin-right: 120px;
-    margin-bottom: 40px;
-    margin-top: 40px;
+    margin-top: 24px;
+}
+.button-footer-subscribe {
+    
 }
