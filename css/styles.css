@@ -8,6 +8,7 @@
     --complementary-color2: #F4F4FD;
     --primary-font: "Roboto";
     --secondary-background: "Raleway";
+    
 
 }
 
@@ -284,13 +285,13 @@ p {
 
 .button-hero:hover,
 .button-hero:focus {
-    background-color: var(--buton-color);
+    background-color: var(--buttons-background-color-hover);
     color: var(--buttons-color-hover);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button-hero:active {
-    background-color: #404BBF;
+    background-color: var(--buttons-background-color-hover);
     color: var(--buttons-color-hover);
 }
 
@@ -606,7 +607,7 @@ p {
 }
 
 .footer-paragraph {
-    width: 284px;
+    width: 264px;
     margin-top: 16px;
     color: var(--buttons-color-hover);
     line-height: 1.5;
@@ -677,46 +678,72 @@ p {
     color: #FFFFFF;
     margin-bottom: 16px;
 }
-
 .box-subscribe label {
-    display: flex;
-    flex-direction: column;
+    width: 264px;
+}
+.input-email {
+    font-family: var(--primary-font);
+    background-color: inherit;
+    padding-left: 16px;
+    height: 40px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: calc(24/12);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-email::placeholder {
+    font-family: var(--primary-font);
+    line-height: calc(24/12);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .box-subscribe {
     margin-left: 80px;
-    display: flex;
     
 }
-.input-email::placeholder {
-    font-family: var(--primary-font);
-    width: 36px;
-    height: 24px;
-    line-height: calc(24/12);
-    letter-spacing: 0.04em;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    color: rgba(255, 255, 255, 0.6);
-
+.subscribe-icon {
+    width: 24px;
+    height: 20px;
+    margin-left: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.input-email {
-    font-size: 12px;
-    width: 264px;
-    height: 40px;
-    background-color: inherit;
-    outline: none;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+.button-subscribe:hover {
+    background-color: #404BBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    color: rgba(255, 255, 255, 0.6);
-    padding-left: 16px;
 }
 .button-subscribe {
+    display: inline-flex;
     background-color: var(--buton-color);
-    color: #FFFFFF;
+    color: #ffffff;
+    margin-left: 24px;
     padding-top: 8px;
     padding-left: 24px;
+    padding-right: 24px;
     padding-bottom: 8px;
+    border-radius: 4px;
+    border-color: transparent;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    line-height: calc(24 / 16);
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 /* buttons portfolio.html */
@@ -1018,10 +1045,7 @@ p {
     
 }
 .modal-form {
-    margin-left: 24px;
-    margin-right: 24px;
-    margin-top: 72px;
-    margin-bottom: 40px;
+    padding: 72px 24px 24px 24px;
 }
 .uni-form input:focus {
     border: 1px solid var(--buton-color);
@@ -1048,14 +1072,14 @@ p {
 .uni-form textarea::placeholder {
     font-family: var(--primary-font);
     font-size: 12px;
-    line-height: calc(16/12);
+    line-height: calc(16 / 12);
     letter-spacing: 0.04em;
     color: rgba(117, 117, 117, 0.5);
     padding-top: 8px;
     padding-left: 16px;
 }
 .textarea:focus {
-    border: 1px solid #4D5AE5;
+    border: 1px solid var(--buton-color);
     outline: none;
 }
 .uni-form-name {
@@ -1066,7 +1090,7 @@ p {
 .uni-form-name label{
     font-family: var(--primary-font);
     font-size: 12px;
-    line-height: calc(16/12);
+    line-height: calc(16 / 12);
     letter-spacing: 0.04em;
     color: #8E8F99;
     margin-top: 0;
@@ -1077,7 +1101,7 @@ p {
 .uni-form label {
     font-family: var(--primary-font);
     font-size: 12px;
-    line-height: calc(16/12);
+    line-height: calc(16 / 12);
     letter-spacing: 0.04em;
     color: #8E8F99;
     margin-top: 8px;
@@ -1132,7 +1156,7 @@ p {
     font-family: var(--primary-font);
     font-weight: 500;
     font-size: 16px;
-    line-height: calc(24/16);
+    line-height: calc(24 / 16);
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     margin-right: auto;
@@ -1162,21 +1186,20 @@ p {
 }
 .label {
     display: flex;
-    /* margin-top: 16px; */
 }
 .content-checkbox {
     font-family: var(--primary-font);
     color: #757575;
     margin-top: 16px;
     font-size: 12px;
-    line-height: calc(16/12);
+    line-height: calc(16 / 12);
     letter-spacing: 0.04em;
     margin-left: 8px;
 }
 .link-chechbox {
     font-family: var(--primary-font);
     font-size: 12px;
-    line-height: calc(16/12);
+    line-height: calc(16 / 12);
     letter-spacing: 0.04em;
 }
 .link-chechbox:hover,
@@ -1184,19 +1207,30 @@ p {
     color: var(--buton-color);
 }
 .button-modal-send {
-    padding: 16px 32px;
+    padding: 16px 32px 16px 32px;
     background-color: var(--buton-color);
     color: #FFFFFF;
     font-family: var(--primary-font); 
     font-weight: 500;
     font-size: 16px; 
-    line-height: calc(24/16);
+    line-height: calc(24 / 16);
     letter-spacing: 0.04em;
     border: none;
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 119px;
+    margin-right: 120;
     margin-top: 24px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-footer-subscribe {
+
+.button-modal-send:hover {
+    background-color: #404BBF;;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;;
     
 }
+
