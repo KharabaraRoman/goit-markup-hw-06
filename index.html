@@ -386,18 +386,25 @@
 					</ul>
 				</div>
 			</div>
+			<div class="box-subscribe">
+				<label>
+					<span class="content-form-footer">Subscribe</span>
+					<input class="input-email" type="email" name="subscribe" placeholder="E-mail">
+				</label>
+				<button  class="button-subscribe" type="submit">Subscribe</button>
+			</div>
 		</div>
 
 	</footer>
 	<div class="backdrop  is-hidden" data-modal>
 		<div class="modal">
 			<div class="modal-form">
-				
+				<form>
 					<p class="title-modal">Leave your contacts and we will call you back</p>
-					<form>
+
 					<div class="uni-form-name">
 						<label for="name">Name</label>
-						<input type="text" name="name" id="name" autofocus>
+						<input type="text" name="name" id="name">
 						<svg class="modal-svg">
 							<use href="./images/symbol-defs.svg#icon-person"></use>
 						</svg>
@@ -418,21 +425,24 @@
 					</div>
 					<div class="uni-form">
 						<label for="coment">Comment</label>
-						<textarea class="textarea" name="coment" id="coment" cols="30" rows="10" placeholder="Text input"></textarea>
+						<textarea class="textarea" name="coment" id="coment" cols="30" rows="10"
+							placeholder="Text input"></textarea>
 					</div>
 					<label class="label">
 						<input class="checkbox" type="checkbox" name="checkbox">
 						<span class="icon-checkbox"></span>
-					 	<p class="content-checkbox">I accept the terms and conditions of the <a class="link-chechbox" href="#">Privacy Policy</a></p>
+						<p class="content-checkbox">I accept the terms and conditions of the <a class="link-chechbox"
+								href="#">Privacy Policy</a></p>
 					</label>
 					<button class="button-modal-send" type="submit">Send</button>
-				</form>
+
 			</div>
 			<button data-modal-close type="button" class="button-close">
 				<svg class="close-svg">
 					<use href="./images/close-button.svg#icon-close-button"></use>
 				</svg>
 			</button>
+			</form>
 		</div>
 	</div>
 	<script src="./js/modal.js"></script>
