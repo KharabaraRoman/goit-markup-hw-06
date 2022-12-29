@@ -1044,6 +1044,8 @@ p {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
+
+/* ----------------FORM BACKDROP----------------- */
 .modal-form {
     padding: 72px 24px 24px 24px;
 }
@@ -1069,23 +1071,11 @@ p {
     flex-direction: column;
     position: relative;
 }
-.uni-form textarea::placeholder {
-    font-family: var(--primary-font);
-    font-size: 12px;
-    line-height: calc(16 / 12);
-    letter-spacing: 0.04em;
-    color: rgba(117, 117, 117, 0.5);
-    padding-top: 8px;
-    padding-left: 16px;
-}
-.textarea:focus {
-    border: 1px solid var(--buton-color);
-    outline: none;
-}
+
 .uni-form-name {
     display: flex;
     flex-direction: column;
-    position: relative;
+    
 }
 .uni-form-name label{
     font-family: var(--primary-font);
@@ -1097,7 +1087,6 @@ p {
     margin-bottom: 4px;
 }
 
-
 .uni-form label {
     font-family: var(--primary-font);
     font-size: 12px;
@@ -1107,6 +1096,7 @@ p {
     margin-top: 8px;
     margin-bottom: 4px;
 }
+
 .uni-form-name input,
 .uni-form input {
     width: 360px;
@@ -1118,7 +1108,8 @@ p {
 }
 .modal-svg-email {
     position: absolute;
-    top: 53%;
+    top: 50%;
+    transform: translateY(-50%);
     left: 17.5px;
     width: 18px;
     height: 24px;
@@ -1127,17 +1118,18 @@ p {
 
 .modal-svg-tel {
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 19px;
     width: 18px;
     height: 24px;
+    transform: translateY(-50% );
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-svg {
     position: absolute;
     top: 50%;
-    transform: translateY(-50% -50%);
+    transform: translateY(-50% );
     left: 19px;
     width: 13px;
     height: 13px;
@@ -1148,8 +1140,29 @@ p {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     width: 360px;
+    font-size: 12px;
+    font-family: inherit;
+    line-height: calc(16 / 12);
+    letter-spacing: 0.04em;
     height: 120px;
+    padding-left: 16px;
+    padding-top: 8px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.uni-form textarea::placeholder {
+    font-family: var(--primary-font);
+    font-size: 12px;
+    line-height: calc(16 / 12);
+    letter-spacing: 0.04em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.textarea:focus {
+    border: 1px solid var(--buton-color);
+    outline: none;
+}
+.position-name {
+    position: relative;
 }
 
 .title-modal {
