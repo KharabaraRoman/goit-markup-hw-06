@@ -285,13 +285,13 @@ p {
 
 .button-hero:hover,
 .button-hero:focus {
-    background-color: var(--buttons-background-color-hover);
+    background-color: #404BBF;
     color: var(--buttons-color-hover);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button-hero:active {
-    background-color: var(--buttons-background-color-hover);
+    background-color: #404BBF;
     color: var(--buttons-color-hover);
 }
 
@@ -686,6 +686,7 @@ p {
     background-color: inherit;
     padding-left: 16px;
     height: 40px;
+    width: 264px;
     color: rgba(255, 255, 255, 0.6);
     line-height: calc(24/12);
     font-size: 12px;
@@ -705,8 +706,7 @@ p {
 }
 
 .box-subscribe {
-    margin-left: 80px;
-    
+    margin-left: auto;
 }
 .subscribe-icon {
     width: 24px;
@@ -945,7 +945,6 @@ p {
 
 
 
-
 .content-slyde {
     color: #F4F4FD;
     line-height: 1.5;
@@ -998,12 +997,11 @@ p {
 }
 
 .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(1.1);
+    transform: translate(-50%, -50%) scale(1.7);
 }
 
 .modal {
     position: absolute;
-    width: 408px;
     border-radius: 4px;
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1011,7 +1009,9 @@ p {
     left: 50%;
 
     transform: translate(-50%, -50%) scale(1);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-svg {
@@ -1139,8 +1139,8 @@ p {
     top: 50%;
     transform: translateY(-50% -50%);
     left: 19px;
-    width: 18px;
-    height: 18px;
+    width: 13px;
+    height: 13px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1212,19 +1212,23 @@ p {
     color: #FFFFFF;
     font-family: var(--primary-font); 
     font-weight: 500;
-    font-size: 16px; 
+    font-size: 16px;
     line-height: calc(24 / 16);
     letter-spacing: 0.04em;
     border: none;
-    margin-left: 119px;
-    margin-right: 120;
     margin-top: 24px;
+    min-width: 169px;
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color cubic-bezier(0.4, 0, 0.2, 1),
     border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.box-button-send{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .button-modal-send:hover {
