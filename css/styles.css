@@ -1193,6 +1193,7 @@ p {
     left: 0;
     
     
+    
 }
 .icon-checkbox {
     display: inline-block;
@@ -1201,14 +1202,17 @@ p {
     border: 1.25px solid black;
     border-radius: 2px;
     margin-top: 16px;
+    
 }
 .checkbox:checked + .icon-checkbox {
     background-color: #404BBF;
     background-image: url("../images/checkbox.svg");
-    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
     background-origin: border-box;
-    border-color: #404BBF;
+    border-color: #404BBF; 
+    
+    
 }
 .label {
     display: flex;
